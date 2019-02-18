@@ -5,6 +5,9 @@ body{
 .x{
     font-size: 25px !important;
   }
+.copy{
+  text-align: center;
+}
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -569,7 +572,12 @@ a{
   }
   .modal {
     background-color: white; /* Black w/ opacity */
-    
+  }
+  .form{
+    text-align: left;
+  }
+  .h2{
+    text-align: left !important;
   }
   .whitecard{
     padding-top: 20px;
@@ -614,11 +622,13 @@ a{
   }
   .x{
     font-size: 20px !important;
+    text-align: left !important;
   }
   p{
   line-height: 1.5; 
   font-size: 11pt;
   margin-top: 10px;
+  text-align: left !important;
 }
   .inside{
     margin: 0px 0px 0px 0px;
@@ -630,8 +640,9 @@ a{
     box-shadow: none;
     padding-bottom: 0;
   }
-
-
+  .copy{
+    text-align: left;
+  }
 
 
 }
