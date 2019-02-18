@@ -576,9 +576,6 @@ a{
   .form{
     text-align: left;
   }
-  .h2{
-    text-align: left !important;
-  }
   .whitecard{
     padding-top: 20px;
   }
@@ -622,14 +619,12 @@ a{
   }
   .x{
     font-size: 20px !important;
-    text-align: left !important;
   }
   p{
-  line-height: 1.5; 
-  font-size: 11pt;
-  margin-top: 10px;
-  text-align: left !important;
-}
+    line-height: 1.5; 
+    font-size: 11pt;
+    margin-top: 10px;
+  }
   .inside{
     margin: 0px 0px 0px 0px;
   }
@@ -641,7 +636,7 @@ a{
     padding-bottom: 0;
   }
   .copy{
-    text-align: left;
+    text-align: left !important;
   }
 
 
