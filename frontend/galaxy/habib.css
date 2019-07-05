@@ -1,7 +1,7 @@
 @media screen and (max-width: 2000px){
 
 	body{ 
-		margin:-1; 
+		margin:0; 
 		padding:0; 
 		box-sizing:border-box; 
 	}
