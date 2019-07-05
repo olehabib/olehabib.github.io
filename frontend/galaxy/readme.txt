@@ -1,1 +1,0 @@
-Berikut adalah website frontend yang merupakan hasil eksplorasi saya mulai dari proses pembuatan user interface (https://www.behance.net/gallery/71614401/UIUX-and-Front-End-Galaxy-Bima-Sakti) hingga pengembangan frontend yang responsive dengan menggunakan css sendiri tanpa framework
