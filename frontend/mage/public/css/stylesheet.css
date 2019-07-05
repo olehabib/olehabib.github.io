@@ -1,0 +1,237 @@
+body{
+	margin-bottom:10px;
+	background-color:#f8f8f8;
+	padding-bottom:40px;
+}
+.center{
+	text-align:center;
+}
+.left div{
+	text-align:left;
+}
+
+.message{
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+}
+.container{
+	margin-top:10px;
+}
+
+body a{
+	color:white;
+}
+body a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+footer{
+	min-height: 50px;
+}
+
+footer a{
+	color:red;
+}
+
+footer a:hover{
+	color:red;
+	text-decoration:none;
+}
+.form-control{
+	box-shadow:2px 0px 0px #7a4c03, -2px 0px 10px #7a4c03;
+	color:#7a4c03;
+}
+.form-control:focus{
+	border:0px;
+	box-shadow:2px 0px 0px white, -2px 0px 10px white;
+	font-weight:bold;
+}
+
+/** header **/
+header{
+	min-height:50px;
+	background-color:#7a4c03;
+}
+
+header .form{
+	border:0px;
+	border-radius:5px;
+	box-shadow:none;	
+}
+header .btn{
+	background-color:white;
+	border:1px solid white;
+	border-radius:5px;
+}
+header .form:focus{
+	box-shadow:2px 0px 10px white, -2px 0px 10px white;	
+}
+
+.logo{
+	width:100px;
+	margin-bottom:10px;
+}
+.home{
+	width:90%;
+	margin-top:10px;
+}
+
+@media (max-width: 768px) {
+.home{
+	display:none;
+}
+}
+/** **/
+
+
+/** menu header **/
+.menu{
+	position: fixed;
+	background: #f6f6f6;
+	color: #232323;			
+	height: 100%;
+	width: 200px;
+	top: 0;
+	right: -300px;
+	-webkit-transition: right 0.5s;
+	transition: right 0.5s;
+	padding: 20px;
+	border: 1px solid #ccc;
+	z-index:2;
+}
+ 
+.menu ul{
+	padding: 0;
+}
+
+.menu li{
+	list-style-type: none;
+	padding: 10px 0px;
+}
+
+.menu a{
+	color: #232323;
+	text-decoration: none;
+	font-size: 10pt;
+}
+.menu a:hover{
+	color: #7a4c03;
+	font-weight:bold;
+	font-size: 12pt;
+}
+.menu-btn{
+	float: right;
+	background: transparent;
+	padding: 10px;
+	color: #fff;
+	border: 0.5px solid #fff;
+	cursor: pointer;
+}
+.slide-menu{
+	right: 0 !important;
+	z-index:2;
+}
+.close{
+	color: #232323;
+	float: none;
+}
+/** **/
+
+.regist, .product, .account{
+	border:2px solid #7a4c03;
+	background-color:white;
+	text-align:center;
+	box-shadow:2px 0px 10px #7a4c03, -2px 0px 10px #7a4c03;
+}
+
+.regist{
+	margin-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.product{
+	min-height:200px;
+	margin-top:20px;
+}
+
+.product a{
+	color:black;
+}
+
+.product a:hover{
+	color:#7a4c03;
+}
+
+
+
+/** account **/
+.account{
+	padding-bottom:25px;
+	min-height:200px;
+	margin-top:20px;
+}
+
+.account-btn{
+	margin:0;
+	margin-top:-20px;
+}
+
+/** button **/
+.regist-btn, .prd-btn, .account-btn, .back-btn{
+	background-color: #7a4c03;
+	width:100%;
+	color:white;
+	border-radius:0px;
+	box-shadow:2px 0px 10px #7a4c03, -2px 0px 10px #7a4c03;
+}
+.regist-btn:hover, .back-btn:hover{
+	color:white;
+}
+.prd-btn:hover, .account-btn:hover{
+	color:white;
+	font-weight:bold;
+}
+
+.back-btn{
+	background-color:chocolate;
+}
+
+/** image upload **/
+.imageupload{
+	width:70%;
+	height:300px;
+}
+
+/** table **/
+.table-responsive{
+	max-height:400px;
+	overflow:auto;
+}
+
+.fil{
+	width: 100%;
+}
+
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar
+{
+  width: 7px;  /* for vertical scrollbars */
+  height: 5px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background:orange;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background:url('../../public/img/bgc.png');
+}
