@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initialscale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="leaflet2.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+</head>
+
+<body>
+  <div class='containermaps'>
+    <div class='peta' id='mapid'> </div>
+    <div class='gambar'>
+      Gambar disini
+    </div>
+    <div class='review'>
+      Tulis review disini
+    </div>
+  </div>
+
+  <script>
+  let map = L.map('mapid').setView([-7.299633, 112.766463], 12);
+
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https:// www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 20,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiaGFiaWJzYWphaCIsImEiOiJjam1mMjViMm4wMGx2M3Vxd2treGt4YmhxIn0.JFef1w_cNMSH-DQOxM1_8A'
+  }).addTo(map);
+
+  var arr_marker= [
+    [-7.251268, 112.800860, "Atlantis Land Kenjeran"],
+    [-7.284274, 112.632340, "Ciputra Waterpark"],
+    [-7.196539, 112.732388, "Surabaya North Quay"],
+    [-7.230477, 112.734234, "House of Sampoerna"],
+    [-7.265129, 112.750334, "Monumen Kapal Selam"],
+    [-7.307256, 112.821938, "Hutan Mangrove Wonorejo"],
+    [-7.291778, 112.715331, "Citilities Skyclub and Bistro Java Paragon Hotel"],
+    [-7.236939, 112.743657, "Klenteng Hong Tiek Hian"],
+    [-7.237822, 112.749612, "Kampung Warna-warni Bulak"],
+    [-7.251851, 112.746787, "Masjid Muhammad Cheng Ho"],
+    [-7.327528, 112.731246, "Taman Pelangi"],
+    [-7.295179, 112.803496, "Hutan Bambu dan Taman Harmoni Keputih"]
+  ];
+
+
+  for (var i = 0; i < arr_marker.length; i++) {
+    L.marker([arr_marker[i][0], arr_marker[i][1]]).addTo(map).bindPopup(arr_marker[i][2]);
+  };
+
+  
+  </script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

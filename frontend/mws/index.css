@@ -1,0 +1,180 @@
+  body {
+    margin: 0;
+    background-image: linear-gradient(45deg,#92278F, #27AAE1); 
+    background-size: cover; 
+    padding: 60px;
+  }
+  
+  .container {
+
+           display: grid; 
+           width: 100%;
+           grid-template-columns:  1fr 1fr 1fr 1fr;
+           grid-template-rows: auto auto auto  auto;     
+              }   
+      .containeradd {
+
+           display: grid; 
+           text-align: center;
+           width: 100%;
+           grid-template-columns:  auto;
+           grid-template-rows: auto auto auto  auto auto;     
+              }   
+    .calc{
+          text-align: center;
+          padding: 20px;
+          grid-column: 1/5;
+          height: 30px;
+     }
+
+     input{
+          width: 80%;
+          height: 40px;
+          text-align: center;
+     }
+
+     .card{
+          background-color: #E2E1E0; 
+          margin-right: 20%;
+          margin-left: 20%;
+          border-radius: 10px; 
+     }
+     .cardadd{
+          background-color: #E2E1E0; 
+          margin-right: 30%;
+          margin-left: 30%;
+          border-radius: 10px; 
+     }
+
+     .menu {
+          border-radius: 10px 10px 0px 0px;
+           background: #562893;      
+           grid-column-start: 1;      
+           grid-column-end: 5;
+           text-align: center;
+              }   
+      .menuadd {
+          border-radius: 10px 10px 0px 0px;
+           background: #562893;      
+           grid-column-start: 1;      
+           grid-column-end: 5;
+           text-align: center;
+              }   
+
+     .sidebar {
+           background-color: #EAEAEA;
+           grid-row: 2/5;         
+           grid-column: 1/2;
+
+              }  
+
+     .konten-con{
+          grid-row: 2/5; 
+          grid-column: 2/5;
+          grid-template-columns:  auto;
+           grid-template-rows: auto;   
+           width: 100%;
+     }
+
+     .konten {
+          height: 40px;
+          grid-row: 300px;
+           background: #E2E1E0;     
+           padding: 30px;
+           font-size:20px;
+              }   
+
+     .footer {
+            border-radius: 0px 0px 10px 10px;
+           background: #9D90A0;      
+           grid-column: 1/5;     
+           grid-row : 5/6;
+               }
+     button{
+        border-radius:2px;
+     		width: 100%;
+     		height: 120%;
+     		background-color: #562893;
+     		border:none;
+     		transition:0.5s;
+     		color:white
+     }
+
+     button:hover{
+     		background-color: #138EE2;
+
+     }
+
+
+     img{
+     		width:340px
+     }
+
+     @media screen and (max-width: 1000px){
+      .card{
+          margin-right: 10%;
+          margin-left: 10%;
+        }
+        .cardadd{
+          margin-right: 0;
+          margin-left: 0;
+        }
+     }
+     @media screen and (max-width:800px){
+
+      .container {
+           display: grid; 
+           width: 100%;
+           grid-template-columns:  auto;
+           grid-template-rows: auto; 
+              }   
+
+     .menu {    
+          grid-row: 1/2;   
+           text-align: center;
+              }   
+
+     .sidebar {    
+           grid-row: 2/3;         
+           grid-column: 1/5;
+              }  
+
+      .konten-con{
+          grid-row: 3/6; 
+          grid-column: 1/5;
+          grid-template-columns:  auto;
+           grid-template-rows: auto;   
+           width: 100%;
+     }
+
+     .konten {
+            grid-row: auto;    
+           padding: 39px;
+           font-size:20px;
+           margin-bottom: 4px;
+              }       
+
+     .footer {    
+           grid-column: 1/5;     
+           grid-row : 6/7;
+               }
+      img{
+     		width:100%
+    	}
+
+      button{
+     		width: 100%;
+     	}
+     }
+
+     @media screen and (max-width: 500px){
+      .card{
+          margin-right: 0;
+          margin-left: 0;
+     }
+     body {
+        padding: 20px;
+        padding-bottom: 100px;
+  }
+
+     }

@@ -1,0 +1,103 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(-45deg,#EAEAEA, #E2E1E0); 
+  height: 100%;
+}
+
+.containermaps {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: auto auto;
+}
+.cardmaps{
+          background-color: #E3DAEF; 
+          margin-right: 10%;
+          margin-left: 10%;
+          border-radius: 10px; 
+     }
+img{
+  width: 400px;
+}
+
+.peta {
+  grid-column: 1/9;
+  height: 400px;
+  grid-row:1/2;
+}
+
+p{
+  font-size: 13pt;
+}
+
+.gambar {
+  background:#EAEAEA;
+  grid-column: 1/6;
+  grid-row:2/3;
+  padding: 60px;
+  font-size: 16pt;
+  height: 100%;
+}
+
+.review {
+  background: #E2E1E0;
+  grid-column: 6/9;
+  padding: 60px;
+  font-size: 16pt;
+  height: 100%;
+  grid-row:2/3;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and (max-width:900px){
+body {
+   background:#EAEAEA;
+}
+  .containermaps {
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.peta {
+  grid-column: 1/8;
+  grid-row:1/2;
+  height:400px;
+  margin-bottom: 0%;
+  float: top;
+
+}
+
+.gambar {
+  grid-column: 1/8;
+  grid-row:2/3;
+  height: 100%;
+  text-align: left;
+  padding: 40px;
+  font-size: 16pt;
+   float: top;
+   top: 0;
+}
+
+.review {
+  grid-column: 1/8;
+  padding: 40px;
+  height: 100%;
+  text-align: left;
+  font-size: 16pt;
+  grid-row:3/4;
+   float: top;
+   top:0;
+}
+img{
+  width: 100%;
+}
+
+}
